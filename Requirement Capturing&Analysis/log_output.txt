@@ -1,0 +1,12 @@
+[akdlxm39] Sat May 17 23:54:46 2025 +0900 Diagram to PDF 변환 04f8cc7
+[akdlxm39] Sat May 17 23:53:59 2025 +0900 Analysis Class Diagram 작성 a67c2db
+[akdlxm39] Fri May 16 16:39:58 2025 +0900 Diagram 파일 통합 5e146d1
+[akdlxm39] Thu May 15 01:33:53 2025 +0900 Communication Diagram 작성 1bab448
+[akdlxm39] Thu May 15 00:45:13 2025 +0900 usecase 이름 수정 4059554
+[akdlxm39] Wed May 14 23:48:44 2025 +0900 Actor 및 UseCase 이름 영어로 변경 d9c0d84
+[akdlxm39] Wed May 14 23:13:01 2025 +0900 Usecase Description 작성 1423ea0
+[akdlxm39] Wed May 14 22:27:28 2025 +0900 Usecase Description 파일 추가 71dbf42
+[akdlxm39] Wed May 14 22:20:23 2025 +0900 Requirement List 수정 및 Usecase Diagram 작성 639c531
+[akdlxm39] Wed May 14 22:11:04 2025 +0900 Requirement List 작성 21c51d0
+[akdlxm39] Wed May 14 21:57:31 2025 +0900 Requirement List 파일 추가 f6e4a1c
+[akdlxm39] Wed May 14 21:53:10 2025 +0900 first commit 7ef52f0
