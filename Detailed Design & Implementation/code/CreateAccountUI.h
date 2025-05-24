@@ -1,37 +1,32 @@
-#ifndef CREATE_ACCOUNT_U_I_H
-#define CREATE_ACCOUNT_U_I_H
+#ifndef CREATE_ACCOUNT_UI_H
+#define CREATE_ACCOUNT_UI_H
 
 #include <string>
-#include <iostream>
 
-#include "CreateAccount.h"
-#include "String.h"
+#include "fileio.h"
+
+using namespace std;
+
+class CreateAccount;
 
 class CreateAccountUI
 {
 private:
-	CreateAccount* create_account_ptr_;
+	CreateAccount* create_account_ptr_; // CreateAccount 객체의 주소
 
-	String id_;
-
-	String password_;
-
-	String phone_number_;
-
-	CreateAccount createAccount;
+	string id_; // 가입하려는 회원의 ID
+	string password_; // 가입하려는 회원의 비밀번호
+	string phone_number_; // 가입하려는 회원의 전화번호
 
 public:
-	CreateAccountUI CreateAccountUI(CreateAccount* create_account_ptr);
+	CreateAccountUI(CreateAccount* create_account_ptr); // 생성자
 
-	void startInterface();
+	string getID(); // ID 반환
+	string getPassword(); // 비밀번호 반환
+	string getPhoneNumber(); // 전화번호 반환
 
-	String getID();
-
-	String getPassword();
-
-	String getPhoneNumber();
-
-	void createNewAccount();
+	void startInterface(); // CreateAccountUI 실행
+	void createNewAccount(); // 회원가입 정보 입력 이벤트 처리 함수
 
 };
 #endif

@@ -1,24 +1,22 @@
 #ifndef MAIN
 #define MAIN
 
-// Çì´õ ¼±¾ğ
+// í—¤ë” ì„ ì–¸
 #include <iostream>
 #include <string>
-#include <fstream>
 
-// ÄÁÆ®·Ñ Å¬·¡½º Çì´õ ¼±¾ğ
+// ì»¨íŠ¸ë¡¤ í´ë˜ìŠ¤ í—¤ë” ì„ ì–¸
 #include "CreateAccount.h"
 #include "LogIn.h"
 #include "LogOut.h"
 #include "AddBicycle.h"
 #include "RentBicycle.h"
 #include "ViewRentedBicycles.h"
+#include "ProgramExit.h"
 
-// Àü¿ª ¿£Æ¼Æ¼ Å¬·¡½º Çì´õ ¼±¾ğ
+// ì „ì—­ ì—”í‹°í‹° í´ë˜ìŠ¤ í—¤ë” ì„ ì–¸
 #include "MemberAccountCollection.h"
 #include "UserManager.h"
 #include "BicycleCollection.h"
-
-using namespace std;
 
 #endif

@@ -2,27 +2,29 @@
 #define ADD_BICYCLE_H
 
 #include <string>
-#include <iostream>
 
-#include "BicycleCollection.h"
 #include "AddBicycleUI.h"
+#include "BicycleCollection.h"
+
+using namespace std;
+
 
 class AddBicycle
 {
 private:
-	BicycleCollection* bicycle_collection_ptr_;
 
-	AddBicycleUI* add_bicycle_ui_ptr_;
+	BicycleCollection* bicycle_collection_ptr_; // BicycleCollection 객체 주소
 
-	AddBicycleUI addBicycleUI;
-	BicycleCollection bicycleCollection;
+	AddBicycleUI* add_bicycle_ui_ptr_; // AddBicycleUI 객체 주소
+
 
 public:
-	AddBicycle AddBicycle(BicycleCollection* bicycle_collection_ptr);
 
-	void run();
+	AddBicycle(BicycleCollection* bicycle_collection_ptr); // 생성자
+	~AddBicycle(); // 파괴자
 
-	void addNewBicycle();
+	void run(); // AddBicycle 실행
+	void addNewBicycle(); // AddBicycleUI에서 자전거 정보를 전달 받아서, BicycleCollection의 addNewBicycle()에 전달
 
 };
 #endif

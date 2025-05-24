@@ -32,6 +32,8 @@
     <ClCompile Include="code\main.cpp" />
     <ClCompile Include="code\MemberAccount.cpp" />
     <ClCompile Include="code\MemberAccountCollection.cpp" />
+    <ClCompile Include="code\ProgramExit.cpp" />
+    <ClCompile Include="code\ProgramExitUI.cpp" />
     <ClCompile Include="code\RentBicycle.cpp" />
     <ClCompile Include="code\RentBicycleUI.cpp" />
     <ClCompile Include="code\RentedBicycleCollection.cpp" />
@@ -46,6 +48,7 @@
     <ClInclude Include="code\BicycleCollection.h" />
     <ClInclude Include="code\CreateAccount.h" />
     <ClInclude Include="code\CreateAccountUI.h" />
+    <ClInclude Include="code\fileio.h" />
     <ClInclude Include="code\LogIn.h" />
     <ClInclude Include="code\LogInUI.h" />
     <ClInclude Include="code\LogOut.h" />
@@ -53,6 +56,8 @@
     <ClInclude Include="code\main.h" />
     <ClInclude Include="code\MemberAccount.h" />
     <ClInclude Include="code\MemberAccountCollection.h" />
+    <ClInclude Include="code\ProgramExit.h" />
+    <ClInclude Include="code\ProgramExitUI.h" />
     <ClInclude Include="code\RentBicycle.h" />
     <ClInclude Include="code\RentBicycleUI.h" />
     <ClInclude Include="code\RentedBicycleCollection.h" />

@@ -1,25 +1,25 @@
-#ifndef LOG_OUT_U_I_H
-#define LOG_OUT_U_I_H
+#ifndef LOG_OUT_UI_H
+#define LOG_OUT_UI_H
 
 #include <string>
-#include <iostream>
 
-#include "LogOut.h"
-#include "String.h"
+#include "fileio.h"
+
+using namespace std;
+
+class LogOut;
 
 class LogOutUI
 {
 private:
-	LogOut* log_out_ptr_;
 
-	LogOut logOut;
+	string id_ = ""; // 로그아웃하려는 회원의 ID, ""로 초기화
 
 public:
-	LogOutUI LogOutUI(LogOut* log_out_ptr);
 
-	void logOut();
+	void setID(string id); // ID 저장
 
-	void setID(String id);
+	void startInterface(); // LogOutUI 실행
 
 };
 #endif

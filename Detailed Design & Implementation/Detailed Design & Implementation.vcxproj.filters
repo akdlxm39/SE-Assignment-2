@@ -72,64 +72,79 @@
     <ClCompile Include="code\RentBicycle.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="code\ProgramExit.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="code\ProgramExitUI.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="code\RentBicycleUI.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="code\RentedBicycleCollection.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="code\UserManager.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="code\ViewRentedBicycles.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="code\ViewRentedBicyclesUI.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
     <ClInclude Include="code\AddBicycle.h">
-      <Filter>소스 파일</Filter>
+      <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="code\AddBicycleUI.h">
-      <Filter>소스 파일</Filter>
+      <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="code\Bicycle.h">
-      <Filter>소스 파일</Filter>
+      <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="code\BicycleCollection.h">
-      <Filter>소스 파일</Filter>
+      <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="code\CreateAccount.h">
-      <Filter>소스 파일</Filter>
+      <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="code\CreateAccountUI.h">
-      <Filter>소스 파일</Filter>
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="code\fileio.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="code\LogIn.h">
-      <Filter>소스 파일</Filter>
+      <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="code\LogInUI.h">
-      <Filter>소스 파일</Filter>
+      <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="code\LogOut.h">
-      <Filter>소스 파일</Filter>
+      <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="code\LogOutUI.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="code\MemberAccount.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="code\MemberAccountCollection.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="code\RentBicycle.h">
-      <Filter>소스 파일</Filter>
+      <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="code\main.h">
-      <Filter>소스 파일</Filter>
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="code\MemberAccount.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="code\MemberAccountCollection.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="code\ProgramExit.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="code\ProgramExitUI.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="code\RentBicycle.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="code\RentBicycleUI.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="code\RentedBicycleCollection.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="code\UserManager.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="code\ViewRentedBicycles.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="code\ViewRentedBicyclesUI.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

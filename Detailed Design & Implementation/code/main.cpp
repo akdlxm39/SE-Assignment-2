@@ -1,22 +1,19 @@
-#include "main.h"
+ï»¿#include "main.h"
+#include "fileio.h"
 
-// »ó¼ö ¼±¾ð
-#define MAX_STRING 32
-#define INPUT_FILE_NAME "input.txt"
-#define OUTPUT_FILE_NAME "output.txt"
+using namespace std;
 
-
-
-// ÇÔ¼ö ¼±¾ð
-void startSystem();
-
-// º¯¼ö ¼±¾ð
+// ë³€ìˆ˜ ì„ ì–¸
 ifstream in_fp;
 ofstream out_fp;
 
+// í•¨ìˆ˜ ì„ ì–¸
+void startSystem();
+
 int main()
 {
-    // ÆÄÀÏ ÀÔÃâ·ÂÀ» À§ÇÑ ÃÊ±âÈ­
+    
+    // íŒŒì¼ ìž…ì¶œë ¥ì„ ìœ„í•œ ì´ˆê¸°í™”
     in_fp.open(INPUT_FILE_NAME);
     out_fp.open(OUTPUT_FILE_NAME);
 
@@ -30,39 +27,114 @@ int main()
 
 void startSystem()
 {
-    // ¸Þ´º ÆÄ½ÌÀ» À§ÇÑ level ±¸ºÐÀ» À§ÇÑ º¯¼ö
+    // ë©”ë‰´ íŒŒì‹±ì„ ìœ„í•œ level êµ¬ë¶„ì„ ìœ„í•œ ë³€ìˆ˜
     int menu_level_1 = 0, menu_level_2 = 0;
     int is_program_exit = 0;
 
     MemberAccountCollection* member_accounts = new MemberAccountCollection();
-    UserManager* user_manager = new UserManager();
+    UserManager* user_manager = new UserManager(member_accounts);
     BicycleCollection* bicycles = new BicycleCollection();
 
     while (!is_program_exit)
     {
-        // ÀÔ·ÂÆÄÀÏ¿¡¼­ ¸Þ´º ¼ýÀÚ 2°³¸¦ ÀÐ±â
+        // ìž…ë ¥íŒŒì¼ì—ì„œ ë©”ë‰´ ìˆ«ìž 2ê°œë¥¼ ì½ê¸°
         in_fp >> menu_level_1 >> menu_level_2;
 
 
-        // ¸Þ´º ±¸ºÐ ¹× ÇØ´ç ¿¬»ê ¼öÇà
+        // ë©”ë‰´ êµ¬ë¶„ ë° í•´ë‹¹ ì—°ì‚° ìˆ˜í–‰
         switch (menu_level_1)
         {
         case 1:
         {
             switch (menu_level_2)
             {
-            case 1:   // "1.1. È¸¿ø°¡ÀÔ¡° ¸Þ´º ºÎºÐ
+            case 1:   // "1.1. íšŒì›ê°€ìž…â€œ ë©”ë‰´ ë¶€ë¶„
             {
-                CreateAccount* createAccount = new CreateAccount(member_accounts);
-                createAccount->run();
-                delete createAccount;
+                CreateAccount* create_account_ctrl = new CreateAccount(member_accounts);
+                create_account_ctrl->run();
+                delete create_account_ctrl;
+                break;
+            }
+            }
+            break;
+        }
+        case 2:
+        {
+            switch (menu_level_2)
+            {
+            case 1:
+            {
+                LogIn* log_in_ctrl = new LogIn(user_manager);
+                log_in_ctrl->run();
+                delete log_in_ctrl;
                 break;
             }
             case 2:
             {
+                LogOut* log_out_ctrl = new LogOut(user_manager);
+                log_out_ctrl->run();
+                delete log_out_ctrl;
                 break;
             }
             }
+            break;
+        }
+        case 3:
+        {
+            switch (menu_level_2)
+            {
+            case 1:
+            {
+                AddBicycle* add_bicycle_ctrl = new AddBicycle(bicycles);
+                add_bicycle_ctrl->run();
+                delete add_bicycle_ctrl;
+                break;
+            }
+            }
+            break;
+        }
+        case 4:
+        {
+            switch (menu_level_2)
+            {
+            case 1:
+            {
+                RentBicycle* rent_bicycle_ctrl = new RentBicycle(user_manager, bicycles);
+                rent_bicycle_ctrl->run();
+                delete rent_bicycle_ctrl;
+                break;
+            }
+            }
+            break;
+        }
+        case 5:
+        {
+            switch (menu_level_2)
+            {
+            case 1:
+            {
+                ViewRentedBicycles* view_rented_bicycles_ctrl = new ViewRentedBicycles(user_manager);
+                view_rented_bicycles_ctrl->run();
+                delete view_rented_bicycles_ctrl;
+                break;
+            }
+            }
+            break;
+        }
+        case 6:
+        {
+            switch (menu_level_2)
+            {
+            case 1:
+            {
+                ProgramExit* program_exit_ctrl = new ProgramExit(&is_program_exit);
+                program_exit_ctrl->run();
+                delete program_exit_ctrl;
+                break;
+            }
+            }
+            break;
+        }
         }
     }
 }
